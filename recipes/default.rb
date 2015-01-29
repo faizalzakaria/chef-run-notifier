@@ -7,8 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
-gem_package 'hipchat' if node['run-notifier']['hipchat']['enabled']
-gem_package 'slack-notifier' if node['run-notifier']['slack']['enabled']
+gem_package 'hipchat' if node['run_notifier']['hipchat']['enabled']
+gem_package 'slack-notifier' if node['run_notifier']['slack']['enabled']
 
 cookbook_file "#{node["chef_handler"]["handler_path"]}/run_notifier.rb" do
   source "run_notifier.rb"

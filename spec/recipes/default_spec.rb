@@ -6,8 +6,8 @@ describe 'run-notifier::default' do
   let(:chef_run) do
     ChefSpec::SoloRunner.new do |node|
       node.set['chef_handler']['handler_path'] = handler_path
-      node.set['run-notifier']['hipchat']['enabled'] = true
-      node.set['run-notifier']['slack']['enabled'] = false
+      node.set['run_notifier']['hipchat']['enabled'] = true
+      node.set['run_notifier']['slack']['enabled'] = false
     end.converge(described_recipe)
   end
 
