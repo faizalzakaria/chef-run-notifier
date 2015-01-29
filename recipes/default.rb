@@ -9,9 +9,6 @@
 
 include_recipe "chef_handler"
 
-gem_package 'hipchat' if node['run_notifier']['hipchat']['enabled']
-gem_package 'slack-notifier' if node['run_notifier']['slack']['enabled']
-
 cookbook_file "#{node["chef_handler"]["handler_path"]}/run_notifier.rb" do
   source "run_notifier.rb"
   owner 'root'

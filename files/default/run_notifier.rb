@@ -1,3 +1,8 @@
+require 'rubygems'
+require 'chef/log'
+require 'hipchat'
+require 'slack-notifier'
+
 module RunNotifier
   class Notify < Chef::Handler
 
@@ -8,12 +13,11 @@ module RunNotifier
 
     def initialize_hipchat(params)
       @hipchat_params = params
-      require 'hipchat' if @hipchat_params[:enabled]
+
     end
 
     def initialize_slack(params)
       @slack_params = params
-      require 'slack-notifier' if @slack_params[:enabled]
     end
 
     def report
