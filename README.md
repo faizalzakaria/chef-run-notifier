@@ -85,7 +85,7 @@ Just include `chef-run-notifier` in your node's `run_list`:
 {
   "name":"my_node",
   "run_list": [
-    "recipe[chef-run-notifier]"
+    "recipe[run_notifier]"
   ]
 }
 ```
