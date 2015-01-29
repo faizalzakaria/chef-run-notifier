@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe "chef_handler"
+
 gem_package 'hipchat' if node['run_notifier']['hipchat']['enabled']
 gem_package 'slack-notifier' if node['run_notifier']['slack']['enabled']
 
