@@ -8,6 +8,11 @@
 #
 
 include_recipe "chef_handler"
+gem_package 'hipchat'
+gem_package 'slack-notifier'
+
+require 'hipchat'
+require 'slack-notifier'
 
 cookbook_file "#{node["chef_handler"]["handler_path"]}/run_notifier.rb" do
   source "run_notifier.rb"
