@@ -9,12 +9,10 @@
 
 include_recipe "chef_handler"
 
-chef_gem 'chef-handler-status_notifier' do
-  source '/tmp/build/chef-handler-status_notifier.gem'
-end
+chef_gem 'chef-handler-status_notifier'
 require 'chef/handler/status_notifier'
 
-chef_handler 'StatusNotifier' do
+chef_handler 'StatusNotifierHandler' do
   source 'chef/handler/status_notifier'
   arguments [node[:run_notifier][:slack], node[:run_notifier][:hipchat]]
   action :nothing
