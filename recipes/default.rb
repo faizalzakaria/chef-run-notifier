@@ -8,22 +8,14 @@
 #
 
 include_recipe "chef_handler"
-gem_package 'hipchat'
-gem_package 'slack-notifier'
 
-require 'hipchat'
-require 'slack-notifier'
-
-cookbook_file "#{node["chef_handler"]["handler_path"]}/run_notifier.rb" do
-  source "run_notifier.rb"
-  owner 'root'
-  group 'root'
-  mode '0755'
-  action :create
+chef_gem 'chef-handler-status_notifier' do
+  source '/tmp/build/chef-handler-status_notifier.gem'
 end
+require 'chef/handler/status_notifier'
 
-chef_handler "RunNotifier::Notify" do
-  source "#{node["chef_handler"]["handler_path"]}/run_notifier.rb"
+chef_handler 'StatusNotifier' do
+  source 'chef/handler/status_notifier'
   arguments [node[:run_notifier][:slack], node[:run_notifier][:hipchat]]
-  action :enable
-end
+  action :nothing
+end.run_action(:enable)
