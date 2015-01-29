@@ -1,4 +1,4 @@
-name             'chef-run-notifier'
+name             'run-notifier'
 maintainer       'Faizal Zakaria'
 maintainer_email 'phaibusiness@gmail.com'
 license          'All rights reserved'

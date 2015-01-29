@@ -6,3 +6,18 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+cookbook_file "#{node["chef_handler"]["handler_path"]}/run_notifier.rb" do
+  source "run_notifier.rb"
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end
+
+chef_handler "RunNotifier::Notify" do
+  source "#{node["chef_handler"]["handler_path"]}/run_notifier.rb"
+  arguments [node[:run_notifier][:slack], node[:run_notifier][:hipchat]]
+  action :enable
+end
+
