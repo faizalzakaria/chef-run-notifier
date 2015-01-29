@@ -22,7 +22,7 @@ e.g.
     <td><tt>['run_notifier']['slack']['enabled']</tt></td>
     <td>Boolean</td>
     <td>Wheather to enable slack or not</td>
-    <td><tt>true</tt></td>
+    <td><tt>false</tt></td>
   </tr>
   <tr>
     <td><tt>['run_notifier']['slack']['webhook_url']</tt></td>
@@ -46,7 +46,7 @@ e.g.
     <td><tt>['run_notifier']['hipchat']['enabled']</tt></td>
     <td>Boolean</td>
     <td>Wheather to enable hicphat or not</td>
-    <td><tt>true</tt></td>
+    <td><tt>false</tt></td>
   </tr>
   <tr>
     <td><tt>['run_notifier']['hipchat']['api_token']</tt></td>
