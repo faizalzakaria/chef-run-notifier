@@ -1,7 +1,7 @@
 chef-run-notifier Cookbook
 ==========================
 
-Run Notifier to notify if the chef run succeed or failed.
+Run Notifier to send notification to HipChat and / or Slack if chef run successfully or failed.
 
 Requirements
 ------------
