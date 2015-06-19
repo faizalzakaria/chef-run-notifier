@@ -20,7 +20,11 @@
 
 include_recipe "chef_handler"
 
-chef_gem 'chef-handler-status_notifier'
+chef_gem 'chef-handler-status_notifier' do
+  version: "0.4.1"
+  action: install
+end
+
 require 'chef/handler/status_notifier'
 
 chef_handler 'StatusNotifierHandler' do
