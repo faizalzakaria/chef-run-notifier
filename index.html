@@ -19,7 +19,9 @@
     </section>
 
     <section class="main-content">
-      <h1>
+      <p><a href="https://travis-ci.org/faizalzakaria/chef-run-notifier"><img src="https://travis-ci.org/faizalzakaria/chef-run-notifier.svg?branch=master" alt="Build Status"></a></p>
+
+<h1>
 <a id="chef-run-notifier-cookbook" class="anchor" href="#chef-run-notifier-cookbook" aria-hidden="true"><span class="octicon octicon-link"></span></a>chef-run-notifier Cookbook</h1>
 
 <p>Run Notifier to send notification to HipChat and / or Slack if chef run successfully or failed.</p>
@@ -30,72 +32,74 @@
 <h2>
 <a id="attributes" class="anchor" href="#attributes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attributes</h2>
 
-<p>e.g.</p>
-
 <h4>
 <a id="chef-run-notifierdefault" class="anchor" href="#chef-run-notifierdefault" aria-hidden="true"><span class="octicon octicon-link"></span></a>chef-run-notifier::default</h4>
 
 <table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['slack']['enabled']</tt></td>
-    <td>Boolean</td>
-    <td>Wheather to enable slack or not</td>
-    <td><tt>false</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['slack']['webhook_url']</tt></td>
-    <td>String</td>
-    <td>Webhook URL</td>
-    <td><tt>https://abc.com</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['slack']['channel']</tt></td>
-    <td>String</td>
-    <td>Channel</td>
-    <td><tt>#default</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['slack']['username']</tt></td>
-    <td>String</td>
-    <td>Username</td>
-    <td><tt>FaiNow</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['hipchat']['enabled']</tt></td>
-    <td>Boolean</td>
-    <td>Wheather to enable hicphat or not</td>
-    <td><tt>false</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['hipchat']['api_token']</tt></td>
-    <td>String</td>
-    <td>HipChat API token</td>
-    <td><tt>1234</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['hipchat']['username']</tt></td>
-    <td>String</td>
-    <td>Username</td>
-    <td><tt>FaiNow</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['hipchat']['room_name']</tt></td>
-    <td>String</td>
-    <td>Room name</td>
-    <td><tt>default</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['hipchat']['notify']</tt></td>
-    <td>Boolean</td>
-    <td>Wheather to notify user or not</td>
-    <td><tt>true</tt></td>
-  </tr>
+<thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>['run_notifier']['slack']['enabled']</td>
+<td>Boolean</td>
+<td>Wheather to enable slack or not</td>
+<td>false</td>
+</tr>
+<tr>
+<td>['run_notifier']['slack']['webhook_url']</td>
+<td>String</td>
+<td>Webhook URL</td>
+<td><a href="https://abc.com">https://abc.com</a></td>
+</tr>
+<tr>
+<td>['run_notifier']['slack']['channel']</td>
+<td>String</td>
+<td>Channel</td>
+<td>#default</td>
+</tr>
+<tr>
+<td>['run_notifier']['slack']['username']</td>
+<td>String</td>
+<td>Username</td>
+<td>FainNow</td>
+</tr>
+<tr>
+<td>['run_notifier']['hipchat']['enabled']</td>
+<td>Boolean</td>
+<td>Wheather to enable hicphat or not</td>
+<td>false</td>
+</tr>
+<tr>
+<td>['run_notifier']['hipchat']['api_token']</td>
+<td>String</td>
+<td>HipChat API token</td>
+<td>1234</td>
+</tr>
+<tr>
+<td>['run_notifier']['hipchat']['username']</td>
+<td>String</td>
+<td>Username</td>
+<td>FaiNow</td>
+</tr>
+<tr>
+<td>['run_notifier']['hipchat']['room_name']</td>
+<td>String</td>
+<td>Room name</td>
+<td>default</td>
+</tr>
+<tr>
+<td>['run_notifier']['hipchat']['notify']</td>
+<td>Boolean</td>
+<td>Whether to notify user or not</td>
+<td></td>
+</tr>
+</tbody>
 </table>
 
 <h2>
@@ -104,8 +108,7 @@
 <h4>
 <a id="chef-run-notifierdefault-1" class="anchor" href="#chef-run-notifierdefault-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>chef-run-notifier::default</h4>
 
-<p>e.g.
-Just include <code>chef-run-notifier</code> in your node's <code>run_list</code>:</p>
+<p>Just include <code>chef-run-notifier</code> in your node's <code>run_list</code>:</p>
 
 <div class="highlight highlight-source-json"><pre>{
   <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>:<span class="pl-s"><span class="pl-pds">"</span>my_node<span class="pl-pds">"</span></span>,
@@ -116,8 +119,6 @@ Just include <code>chef-run-notifier</code> in your node's <code>run_list</code>
 
 <h2>
 <a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
-
-<p>e.g.</p>
 
 <ol>
 <li>Fork the repository on Github</li>
@@ -141,6 +142,16 @@ Just include <code>chef-run-notifier</code> in your node's <code>run_list</code>
 
     </section>
 
-  
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-43044048-8");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
