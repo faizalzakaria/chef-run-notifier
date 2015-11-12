@@ -7,5 +7,5 @@ DEPENDENCIES
 
 GRAPH
   chef_handler (1.1.7)
-  run-notifier (0.2.2)
+  run-notifier (0.2.4)
     chef_handler (>= 0.0.0)
