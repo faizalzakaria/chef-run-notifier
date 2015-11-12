@@ -1,0 +1,32 @@
+language: ruby
+cache: bundler
+sudo: false
+
+rvm:
+  - 2.0.0
+  - 2.1
+  - 2.2
+
+branches:
+  only:
+    - master
+
+bundler_args: --jobs 7 --retry 3
+
+gemfile: Gemfile
+
+env:
+  - CHEF_VERSION=master
+  - CHEF_VERSION=12.4.3
+  - CHEF_VERSION=12.4.0
+  - CHEF_VERSION=12.3.0
+  - CHEF_VERSION=12.2.1
+  - CHEF_VERSION=12.1.2
+  - CHEF_VERSION=12.1.1
+  - CHEF_VERSION=12.1.0
+  - CHEF_VERSION=12.0.3
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - env: CHEF_VERSION=master
