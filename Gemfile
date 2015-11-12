@@ -6,6 +6,7 @@ group :development do
   gem 'chefspec'
   gem 'slack-notifier'
   gem 'hipchat'
+  gem 'stove'
 end
 
 
