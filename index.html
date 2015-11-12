@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Chef-run-notifier by faizalzakaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Chef-run-notifier</h1>
+      <h2 class="project-tagline">Run Notifier to notify Slack And / Or Hipchat when Chef run successfully/failed.</h2>
+      <a href="https://github.com/faizalzakaria/chef-run-notifier" class="btn">View on GitHub</a>
+      <a href="https://github.com/faizalzakaria/chef-run-notifier/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/faizalzakaria/chef-run-notifier/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="chef-run-notifier-cookbook" class="anchor" href="#chef-run-notifier-cookbook" aria-hidden="true"><span class="octicon octicon-link"></span></a>chef-run-notifier Cookbook</h1>
+
+<p>Run Notifier to send notification to HipChat and / or Slack if chef run successfully or failed.</p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<h2>
+<a id="attributes" class="anchor" href="#attributes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Attributes</h2>
+
+<p>e.g.</p>
+
+<h4>
+<a id="chef-run-notifierdefault" class="anchor" href="#chef-run-notifierdefault" aria-hidden="true"><span class="octicon octicon-link"></span></a>chef-run-notifier::default</h4>
+
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td><tt>['run_notifier']['slack']['enabled']</tt></td>
+    <td>Boolean</td>
+    <td>Wheather to enable slack or not</td>
+    <td><tt>false</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['run_notifier']['slack']['webhook_url']</tt></td>
+    <td>String</td>
+    <td>Webhook URL</td>
+    <td><tt>https://abc.com</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['run_notifier']['slack']['channel']</tt></td>
+    <td>String</td>
+    <td>Channel</td>
+    <td><tt>#default</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['run_notifier']['slack']['username']</tt></td>
+    <td>String</td>
+    <td>Username</td>
+    <td><tt>FaiNow</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['run_notifier']['hipchat']['enabled']</tt></td>
+    <td>Boolean</td>
+    <td>Wheather to enable hicphat or not</td>
+    <td><tt>false</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['run_notifier']['hipchat']['api_token']</tt></td>
+    <td>String</td>
+    <td>HipChat API token</td>
+    <td><tt>1234</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['run_notifier']['hipchat']['username']</tt></td>
+    <td>String</td>
+    <td>Username</td>
+    <td><tt>FaiNow</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['run_notifier']['hipchat']['room_name']</tt></td>
+    <td>String</td>
+    <td>Room name</td>
+    <td><tt>default</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['run_notifier']['hipchat']['notify']</tt></td>
+    <td>Boolean</td>
+    <td>Wheather to notify user or not</td>
+    <td><tt>true</tt></td>
+  </tr>
+</table>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h4>
+<a id="chef-run-notifierdefault-1" class="anchor" href="#chef-run-notifierdefault-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>chef-run-notifier::default</h4>
+
+<p>e.g.
+Just include <code>chef-run-notifier</code> in your node's <code>run_list</code>:</p>
+
+<div class="highlight highlight-source-json"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>name<span class="pl-pds">"</span></span>:<span class="pl-s"><span class="pl-pds">"</span>my_node<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>run_list<span class="pl-pds">"</span></span>: [
+    <span class="pl-s"><span class="pl-pds">"</span>recipe[run-notifier]<span class="pl-pds">"</span></span>
+  ]
+}</pre></div>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>e.g.</p>
+
+<ol>
+<li>Fork the repository on Github</li>
+<li>Create a named feature branch (like <code>add_component_x</code>)</li>
+<li>Write your change</li>
+<li>Write tests for your change (if applicable)</li>
+<li>Run the tests, ensuring they all pass</li>
+<li>Submit a Pull Request using Github</li>
+</ol>
+
+<h2>
+<a id="license-and-authors" class="anchor" href="#license-and-authors" aria-hidden="true"><span class="octicon octicon-link"></span></a>License and Authors</h2>
+
+<p>Author: Faizal Zakaria</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/faizalzakaria/chef-run-notifier">Chef-run-notifier</a> is maintained by <a href="https://github.com/faizalzakaria">faizalzakaria</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
