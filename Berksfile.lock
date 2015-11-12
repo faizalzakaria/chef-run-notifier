@@ -1,11 +1,9 @@
 DEPENDENCIES
-  chef_handler
-    git: git@github.com:opscode-cookbooks/chef_handler.git
-    revision: 9dc8e6747e4c1bf0e353266440c226048d1d37f9
+  chef_handler (~> 1.2.0)
   run-notifier
     path: .
 
 GRAPH
-  chef_handler (1.1.7)
+  chef_handler (1.2.0)
   run-notifier (0.2.4)
     chef_handler (>= 0.0.0)
