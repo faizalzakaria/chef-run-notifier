@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/faizalzakaria/chef-run-notifier.svg?branch=master)](https://travis-ci.org/faizalzakaria/chef-run-notifier)
+
 chef-run-notifier Cookbook
 ==========================
 
@@ -10,68 +12,17 @@ Attributes
 ----------
 
 #### chef-run-notifier::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['slack']['enabled']</tt></td>
-    <td>Boolean</td>
-    <td>Wheather to enable slack or not</td>
-    <td><tt>false</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['slack']['webhook_url']</tt></td>
-    <td>String</td>
-    <td>Webhook URL</td>
-    <td><tt>https://abc.com</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['slack']['channel']</tt></td>
-    <td>String</td>
-    <td>Channel</td>
-    <td><tt>#default</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['slack']['username']</tt></td>
-    <td>String</td>
-    <td>Username</td>
-    <td><tt>FaiNow</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['hipchat']['enabled']</tt></td>
-    <td>Boolean</td>
-    <td>Wheather to enable hicphat or not</td>
-    <td><tt>false</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['hipchat']['api_token']</tt></td>
-    <td>String</td>
-    <td>HipChat API token</td>
-    <td><tt>1234</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['hipchat']['username']</tt></td>
-    <td>String</td>
-    <td>Username</td>
-    <td><tt>FaiNow</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['hipchat']['room_name']</tt></td>
-    <td>String</td>
-    <td>Room name</td>
-    <td><tt>default</tt></td>
-  </tr>
-  <tr>
-    <td><tt>['run_notifier']['hipchat']['notify']</tt></td>
-    <td>Boolean</td>
-    <td>Wheather to notify user or not</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+|Key|Type|Description|Default|
+|---|----|-----------|-------|
+|['run_notifier']['slack']['enabled']|Boolean|Wheather to enable slack or not|false|
+|['run_notifier']['slack']['webhook_url']|String|Webhook URL|https://abc.com|
+|['run_notifier']['slack']['channel']|String|Channel|#default|
+|['run_notifier']['slack']['username']|String|Username|FainNow|
+|['run_notifier']['hipchat']['enabled']|Boolean|Wheather to enable hicphat or not|false|
+|['run_notifier']['hipchat']['api_token']|String|HipChat API token|1234|
+|['run_notifier']['hipchat']['username']|String|Username|FaiNow|
+|['run_notifier']['hipchat']['room_name']|String|Room name|default|
+|['run_notifier']['hipchat']['notify']|Boolean|Whether to notify user or not|
 
 Usage
 -----
