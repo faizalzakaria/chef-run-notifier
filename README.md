@@ -9,7 +9,6 @@ Requirements
 Attributes
 ----------
 
-e.g.
 #### chef-run-notifier::default
 <table>
   <tr>
@@ -78,7 +77,6 @@ Usage
 -----
 #### chef-run-notifier::default
 
-e.g.
 Just include `chef-run-notifier` in your node's `run_list`:
 
 ```json
@@ -92,8 +90,6 @@ Just include `chef-run-notifier` in your node's `run_list`:
 
 Contributing
 ------------
-
-e.g.
 
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
