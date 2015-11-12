@@ -30,3 +30,5 @@ matrix:
   fast_finish: true
   allow_failures:
     - env: CHEF_VERSION=master
+
+script: bundle exec rspec
