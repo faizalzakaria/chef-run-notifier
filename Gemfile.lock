@@ -94,6 +94,16 @@ GEM
     ffi (1.9.10)
     ffi-yajl (2.2.2)
       libyajl2 (~> 1.2)
+    foodcritic (5.0.0)
+      erubis
+      gherkin (~> 2.11)
+      nokogiri (>= 1.5, < 2.0)
+      rake
+      rufus-lru (~> 1.0)
+      treetop (~> 1.4)
+      yajl-ruby (~> 1.1)
+    gherkin (2.12.2)
+      multi_json (~> 1.3)
     hashie (3.4.3)
     highline (1.7.8)
     hipchat (1.5.2)
@@ -114,6 +124,7 @@ GEM
     method_source (0.8.2)
     mime-types (2.6.2)
     mimemagic (0.3.0)
+    mini_portile (0.6.2)
     minitar (0.5.4)
     mixlib-authentication (1.3.0)
       mixlib-log
@@ -134,6 +145,8 @@ GEM
       net-ssh-gateway (>= 1.2.0)
     net-telnet (0.1.1)
     nio4r (1.1.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
     octokit (3.8.0)
       sawyer (~> 0.6.0, >= 0.5.3)
     ohai (8.7.0)
@@ -150,6 +163,7 @@ GEM
       systemu (~> 2.6.4)
       wmi-lite (~> 1.0)
     plist (3.1.0)
+    polyglot (0.3.5)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -193,6 +207,7 @@ GEM
     rspec_junit_formatter (0.2.3)
       builder (< 4)
       rspec-core (>= 2, < 4, != 2.12.0)
+    rufus-lru (1.0.5)
     safe_yaml (1.0.4)
     sawyer (0.6.0)
       addressable (~> 2.3.5)
@@ -228,11 +243,14 @@ GEM
     thor (0.19.1)
     timers (4.0.4)
       hitimes
+    treetop (1.6.3)
+      polyglot (~> 0.3)
     uuidtools (2.1.5)
     varia_model (0.5.0)
       buff-extensions (~> 1.0)
       hashie (>= 2.0.2, < 4.0.0)
     wmi-lite (1.0.0)
+    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -241,6 +259,7 @@ DEPENDENCIES
   berkshelf
   chef-handler-status_notifier
   chefspec
+  foodcritic
   kitchen
   kitchen-vagrant
   rspec
