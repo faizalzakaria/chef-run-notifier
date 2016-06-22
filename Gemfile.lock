@@ -65,7 +65,7 @@ GEM
     chef-config (12.5.1)
       mixlib-config (~> 2.0)
       mixlib-shellout (~> 2.0)
-    chef-handler-status_notifier (0.4.2)
+    chef-handler-status_notifier (0.4.3)
       hipchat
       slack-notifier
     chef-zero (4.3.2)
@@ -106,11 +106,11 @@ GEM
       multi_json (~> 1.3)
     hashie (3.4.3)
     highline (1.7.8)
-    hipchat (1.5.2)
+    hipchat (1.5.3)
       httparty
       mimemagic
     hitimes (1.2.3)
-    httparty (0.13.5)
+    httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     httpclient (2.6.0.1)
@@ -123,7 +123,7 @@ GEM
     logify (0.2.0)
     method_source (0.8.2)
     mime-types (2.6.2)
-    mimemagic (0.3.0)
+    mimemagic (0.3.1)
     mini_portile (0.6.2)
     minitar (0.5.4)
     mixlib-authentication (1.3.0)
@@ -219,7 +219,7 @@ GEM
       rspec-its
       specinfra (~> 2.43)
     sfl (2.2)
-    slack-notifier (1.2.1)
+    slack-notifier (1.5.1)
     slop (3.6.0)
     solve (1.2.1)
       dep_selector (~> 1.0)
@@ -265,3 +265,6 @@ DEPENDENCIES
   rspec
   stove
   test-kitchen
+
+BUNDLED WITH
+   1.11.2

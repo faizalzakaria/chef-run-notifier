@@ -21,6 +21,7 @@
 include_recipe "chef_handler"
 
 chef_gem 'chef-handler-status_notifier' do
+  compile_time false if Chef::Resource::ChefGem.method_defined?(:compile_time)
   action :upgrade
 end
 
