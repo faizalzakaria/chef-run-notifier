@@ -5,6 +5,10 @@
       "webhook_url": "https://hooks.slack.com/services/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",
       "channel": "code3",
       "username": "RunNotifierBot"
+    },
+    "custom_messages": {
+      "success_message": "\"Happy, #{node.name} run successfully\"",
+      "failed_message": "\"Sad, #{node.name} run with failure\""
     }
   }
 }

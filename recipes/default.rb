@@ -2,7 +2,7 @@
 # Cookbook Name:: run-notifier
 # Recipe:: default
 #
-# Author:: Faizal F Zakaria (phaibusiness@gmail.com)
+# Author:: Faizal F Zakaria (fai@code3.io)
 #
 # Copyright 2015, Faizal F Zakaria
 #
@@ -29,6 +29,6 @@ require 'chef/handler/status_notifier'
 
 chef_handler 'StatusNotifierHandler' do
   source 'chef/handler/status_notifier'
-  arguments [node['run_notifier']['slack'], node['run_notifier']['hipchat']]
+  arguments [node['run_notifier']['slack'], node['run_notifier']['hipchat'], node['run_notifier']['custom_messages']]
   action :nothing
 end.run_action(:enable)
