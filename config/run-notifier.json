@@ -1,0 +1,10 @@
+{
+  "run_notifier": {
+    "slack": {
+      "enabled": true,
+      "webhook_url": "https://hooks.slack.com/services/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",
+      "channel": "code3",
+      "username": "RunNotifierBot"
+    }
+  }
+}
