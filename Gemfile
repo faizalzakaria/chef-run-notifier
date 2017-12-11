@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 group :development do
-  gem 'chef', '~>12.7.2'
+  gem 'chef'
   gem 'berkshelf'
   gem 'rspec'
   gem 'chefspec'

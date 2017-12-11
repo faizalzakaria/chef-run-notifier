@@ -291,7 +291,7 @@ PLATFORMS
 
 DEPENDENCIES
   berkshelf
-  chef (~> 12.7.2)
+  chef
   chef-handler-status_notifier
   chefspec
   foodcritic
