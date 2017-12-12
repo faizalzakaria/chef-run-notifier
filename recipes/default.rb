@@ -22,7 +22,7 @@ include_recipe "chef_handler"
 
 chef_gem 'chef-handler-status_notifier' do
   compile_time true if respond_to?(:compile_time)
-  action :upgrade
+  version '0.5.1'
 end
 
 require 'chef/handler/status_notifier'
