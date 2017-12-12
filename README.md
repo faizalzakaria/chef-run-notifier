@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/faizalzakaria/chef-run-notifier.svg?branch=master)](https://travis-ci.org/faizalzakaria/chef-run-notifier)
-
 chef-run-notifier Cookbook
 ==========================
 
@@ -12,9 +10,9 @@ https://supermarket.chef.io/cookbooks/run-notifier
 Requirements
 ------------
 
-- Chef version 11 :negative_squared_cross_mark:
+- Chef version 11 :x:
 - Chef version 12 :white_check_mark:
-- Chef version 13 :negative_squared_cross_mark:
+- Chef version 13 :x:
 
 
 Attributes
