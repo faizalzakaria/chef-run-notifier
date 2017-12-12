@@ -1,0 +1,8 @@
+title: Chef-run-notifier
+description: Run Notifier to notify Slack And / Or Hipchat when Chef run successfully/failed.
+google_analytics: UA-43044048-8
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
