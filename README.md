@@ -27,8 +27,8 @@ https://supermarket.chef.io/cookbooks/run-notifier
 |['run_notifier']['hipchat']['api_token']|String|HipChat API token|1234|
 |['run_notifier']['hipchat']['username']|String|Username|FaiNow|
 |['run_notifier']['hipchat']['room_name']|String|Room name|default|
-|['run_notifier']['hipchat']['notify']|Boolean|Whether to notify user or not|
-|['run_notifier']['custom_messages]['success_message]|String|custom success message|'"Chef run succesfully on #{node.name}"'|
+|['run_notifier']['hipchat']['notify']|Boolean|Whether to notify user or not|true|
+|['run_notifier']['custom_messages']['success_message']|String|custom success message|'"Chef run succesfully on #{node.name}"'|
 |['run_notifier']['custom_messages']['failed_message']|String|custom failed message|'"Failure on #{node.name}: #{run_status.formatted_exception}"'|
 
 
