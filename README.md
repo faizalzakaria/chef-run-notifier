@@ -12,6 +12,11 @@ https://supermarket.chef.io/cookbooks/run-notifier
 Requirements
 ------------
 
+- Chef version 11 :negative_squared_cross_mark:
+- Chef version 12 :white_check_mark:
+- Chef version 13 :negative_squared_cross_mark:
+
+
 Attributes
 ----------
 
