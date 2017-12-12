@@ -1,14 +1,9 @@
 source 'https://rubygems.org'
 
 group :development do
-  gem 'chef'
   gem 'berkshelf'
-  gem 'rspec'
-  gem 'chefspec'
   gem 'stove'
   gem 'test-kitchen'
-  gem "kitchen-vagrant"
-  gem "kitchen"
   gem "foodcritic"
-  gem "chef-handler-status_notifier"
+  gem "kitchen-vagrant"
 end
