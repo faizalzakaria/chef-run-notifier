@@ -7,18 +7,16 @@ https://supermarket.chef.io/cookbooks/run-notifier
 <img width="644" alt="screen shot 2017-12-11 at 8 21 29 pm" src="https://user-images.githubusercontent.com/3461316/33849588-59abc1c4-deb1-11e7-9726-121f13cce42a.png">
 
 
-Requirements
-------------
+## Requirements
 
 - Chef version 11 :x:
 - Chef version 12 :white_check_mark:
 - Chef version 13 :x:
 
 
-Attributes
-----------
+## Attributes
 
-#### chef-run-notifier::default
+
 |Key|Type|Description|Default|
 |---|----|-----------|-------|
 |['run_notifier']['slack']['enabled']|Boolean|Wheather to enable slack or not|false|
@@ -33,8 +31,9 @@ Attributes
 |['run_notifier']['custom_messages]['success_message]|String|custom success message|'"Chef run succesfully on #{node.name}"'|
 |['run_notifier']['custom_messages']['failed_message']|String|custom failed message|'"Failure on #{node.name}: #{run_status.formatted_exception}"'|
 
-Usage
------
+
+## Usage
+
 #### chef-run-notifier::default
 
 Just include `chef-run-notifier` in your node's `run_list`:
@@ -48,8 +47,7 @@ Just include `chef-run-notifier` in your node's `run_list`:
 }
 ```
 
-Contributing
-------------
+## Contributing
 
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
@@ -58,7 +56,7 @@ Contributing
 5. Run the tests, ensuring they all pass, `bundle exec rspec` as well as `kitchen test`
 6. Submit a Pull Request using Github
 
-License and Authors
--------------------
+## License and Authors
+
 Author: Faizal Zakaria
 
